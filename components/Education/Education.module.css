@@ -1,0 +1,57 @@
+.education {
+  @apply max-w-4xl mx-auto p-8;
+}
+
+.title {
+  @apply text-3xl text-gray-900 dark:text-white mb-8 text-center font-bold;
+}
+
+.educationList {
+  @apply flex flex-col gap-6;
+}
+
+.educationCard {
+  @apply bg-white dark:bg-gray-800 rounded-lg p-8 shadow-lg border-l-4 border-green-600 transition-colors duration-300;
+}
+
+.degreeHeader {
+  @apply flex justify-between items-start mb-4;
+}
+
+.degree {
+  @apply text-xl text-gray-900 dark:text-white m-0 flex-1 font-semibold;
+}
+
+.duration {
+  @apply bg-green-600 text-white py-2 px-4 rounded-full text-sm font-medium ml-4;
+}
+
+.institution {
+  @apply text-lg text-gray-700 dark:text-gray-300 my-2 font-medium;
+}
+
+.location {
+  @apply text-gray-600 dark:text-gray-400 my-2;
+}
+
+.grade {
+  @apply text-green-600 dark:text-green-400 font-semibold my-2;
+}
+
+@media (max-width: 768px) {
+  .education {
+    @apply p-4;
+  }
+
+  .degreeHeader {
+    @apply flex-col gap-4;
+  }
+
+  .duration {
+    @apply self-start ml-0;
+  }
+
+  .degree {
+    @apply text-lg;
+  }
+}

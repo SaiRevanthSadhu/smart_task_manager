@@ -1,0 +1,25 @@
+.navigation {
+  @apply bg-white dark:bg-gray-800 shadow-md sticky top-0 z-50 transition-colors duration-300;
+}
+
+.container {
+  @apply max-w-6xl mx-auto px-4 flex justify-center gap-8;
+}
+
+.navButton {
+  @apply bg-transparent border-0 py-4 px-6 text-base font-medium text-gray-600 dark:text-gray-300 cursor-pointer transition-all duration-300 border-b-4 border-transparent hover:text-blue-600 dark:hover:text-blue-400;
+}
+
+.navButton.active {
+  @apply text-blue-600 dark:text-blue-400 border-blue-600 dark:border-blue-400;
+}
+
+@media (max-width: 768px) {
+  .container {
+    @apply gap-2 overflow-x-auto justify-start;
+  }
+
+  .navButton {
+    @apply py-4 px-4 text-sm whitespace-nowrap;
+  }
+}

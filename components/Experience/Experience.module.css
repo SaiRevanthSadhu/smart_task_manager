@@ -1,0 +1,66 @@
+.experience {
+  @apply max-w-5xl mx-auto p-8;
+}
+
+.title {
+  @apply text-3xl text-gray-900 dark:text-white mb-8 text-center font-bold;
+}
+
+.timeline {
+  @apply flex flex-col gap-8;
+}
+
+.jobCard {
+  @apply bg-white dark:bg-gray-800 rounded-lg p-8 shadow-lg border-l-4 border-blue-600 transition-colors duration-300;
+}
+
+.jobHeader {
+  @apply flex justify-between items-start mb-4;
+}
+
+.company {
+  @apply text-2xl text-gray-900 dark:text-white m-0 font-bold;
+}
+
+.duration {
+  @apply bg-blue-600 text-white py-2 px-4 rounded-full text-sm font-medium;
+}
+
+.position {
+  @apply text-xl text-gray-700 dark:text-gray-300 my-2 font-semibold;
+}
+
+.location {
+  @apply text-gray-600 dark:text-gray-400 my-2;
+}
+
+.project,
+.client {
+  @apply text-gray-700 dark:text-gray-300 my-2;
+}
+
+.responsibilities {
+  @apply mt-4 pl-6;
+}
+
+.responsibilities li {
+  @apply mb-2 text-gray-700 dark:text-gray-300 leading-relaxed;
+}
+
+@media (max-width: 768px) {
+  .experience {
+    @apply p-4;
+  }
+
+  .jobHeader {
+    @apply flex-col gap-4;
+  }
+
+  .duration {
+    @apply self-start;
+  }
+
+  .company {
+    @apply text-xl;
+  }
+}

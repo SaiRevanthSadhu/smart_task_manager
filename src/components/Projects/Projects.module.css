@@ -1,0 +1,114 @@
+.projectsContainer {
+  @apply bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 transition-colors duration-300;
+}
+
+.sectionTitle {
+  @apply text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center;
+}
+
+.filterButtons {
+  @apply flex flex-wrap justify-center gap-2 mb-8;
+}
+
+.filterButton {
+  @apply px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 border border-gray-300 dark:border-gray-600;
+}
+
+.filterButton:not(.active) {
+  @apply bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-600;
+}
+
+.filterButton.active {
+  @apply bg-blue-600 dark:bg-blue-500 text-white border-blue-600 dark:border-blue-500;
+}
+
+.projectsGrid {
+  @apply grid gap-6 md:grid-cols-2;
+}
+
+.projectCard {
+  @apply bg-gray-50 dark:bg-gray-700 rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300;
+}
+
+.projectHeader {
+  @apply flex justify-between items-start mb-4;
+}
+
+.projectTitle {
+  @apply text-xl font-bold text-gray-900 dark:text-white mb-2;
+}
+
+.projectMeta {
+  @apply flex flex-wrap gap-2 items-center;
+}
+
+.company {
+  @apply text-sm font-medium text-blue-600 dark:text-blue-400;
+}
+
+.duration {
+  @apply text-sm text-gray-600 dark:text-gray-300;
+}
+
+.typeTag {
+  @apply px-2 py-1 rounded-full text-xs font-medium;
+}
+
+.expandButton {
+  @apply w-8 h-8 bg-blue-600 dark:bg-blue-500 text-white rounded-full flex items-center justify-center font-bold hover:bg-blue-700 dark:hover:bg-blue-600 transition-colors duration-200 flex-shrink-0;
+}
+
+.projectDescription {
+  @apply text-gray-700 dark:text-gray-300 mb-4 leading-relaxed;
+}
+
+.technologiesSection {
+  @apply mb-4;
+}
+
+.technologiesTitle {
+  @apply text-sm font-semibold text-gray-900 dark:text-white mb-2;
+}
+
+.technologiesList {
+  @apply flex flex-wrap gap-2;
+}
+
+.technologyTag {
+  @apply px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-xs font-medium;
+}
+
+.featuresSection {
+  @apply mt-6 pt-6 border-t border-gray-200 dark:border-gray-600;
+}
+
+.featuresTitle {
+  @apply text-sm font-semibold text-gray-900 dark:text-white mb-3;
+}
+
+.featuresList {
+  @apply space-y-2;
+}
+
+.featureItem {
+  @apply text-sm text-gray-700 dark:text-gray-300 pl-4 relative;
+}
+
+.featureItem::before {
+  content: "✓";
+  @apply absolute left-0 text-green-600 dark:text-green-400 font-bold;
+}
+
+@media (max-width: 768px) {
+  .projectsGrid {
+    @apply grid-cols-1;
+  }
+
+  .projectHeader {
+    @apply flex-col gap-4;
+  }
+
+  .projectMeta {
+    @apply flex-col items-start gap-1;
+  }
+}

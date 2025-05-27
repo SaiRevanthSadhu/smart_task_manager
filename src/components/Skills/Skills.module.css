@@ -1,0 +1,113 @@
+.skillsContainer {
+  @apply bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 transition-colors duration-300;
+}
+
+.sectionTitle {
+  @apply text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center;
+}
+
+.filterButtons {
+  @apply flex flex-wrap justify-center gap-2 mb-8;
+}
+
+.filterButton {
+  @apply px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 border border-gray-300 dark:border-gray-600;
+}
+
+.filterButton:not(.active) {
+  @apply bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-600;
+}
+
+.filterButton.active {
+  @apply bg-blue-600 dark:bg-blue-500 text-white border-blue-600 dark:border-blue-500;
+}
+
+.skillsGrid {
+  @apply grid gap-6 md:grid-cols-2 lg:grid-cols-3 mb-8;
+}
+
+.skillCategory {
+  @apply bg-gray-50 dark:bg-gray-700 rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300;
+}
+
+.categoryHeader {
+  @apply flex items-center mb-4;
+}
+
+.categoryIcon {
+  @apply text-2xl mr-3;
+}
+
+.categoryTitle {
+  @apply text-lg font-semibold text-gray-900 dark:text-white;
+}
+
+.skillsList {
+  @apply space-y-3;
+}
+
+.skillItem {
+  @apply space-y-1;
+}
+
+.skillInfo {
+  @apply flex justify-between items-center;
+}
+
+.skillName {
+  @apply text-sm font-medium text-gray-700 dark:text-gray-300;
+}
+
+.skillPercentage {
+  @apply text-xs font-bold text-blue-600 dark:text-blue-400;
+}
+
+.skillBar {
+  @apply w-full bg-gray-200 dark:bg-gray-600 rounded-full h-2;
+}
+
+.skillProgress {
+  @apply bg-gradient-to-r from-blue-500 to-purple-600 h-2 rounded-full transition-all duration-1000 ease-out;
+}
+
+.skillsSummary {
+  @apply bg-gradient-to-r from-blue-50 to-purple-50 dark:from-gray-700 dark:to-gray-600 rounded-lg p-6;
+}
+
+.summaryTitle {
+  @apply text-xl font-bold text-gray-900 dark:text-white mb-4 text-center;
+}
+
+.summaryStats {
+  @apply flex justify-around;
+}
+
+.statItem {
+  @apply text-center;
+}
+
+.statNumber {
+  @apply block text-2xl font-bold text-blue-600 dark:text-blue-400;
+}
+
+.statLabel {
+  @apply text-sm text-gray-600 dark:text-gray-300;
+}
+
+@media (max-width: 768px) {
+  .skillsGrid {
+    @apply grid-cols-1;
+  }
+
+  .filterButtons {
+    @apply gap-1;
+  }
+
+  .filterButton {
+    @apply px-3 py-1 text-xs;
+  }
+
+  .summaryStats {
+    @apply flex-col gap-4;
+  }
+}

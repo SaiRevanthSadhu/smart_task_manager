@@ -1,0 +1,45 @@
+.header {
+  @apply bg-gradient-to-r from-blue-600 to-purple-600 text-white py-8 relative;
+}
+
+.container {
+  @apply max-w-6xl mx-auto px-4 flex justify-between items-center;
+}
+
+.profileSection {
+  @apply flex-1;
+}
+
+.name {
+  @apply text-4xl font-bold mb-2;
+}
+
+.title {
+  @apply text-xl font-light mb-4 opacity-90;
+}
+
+.contactInfo {
+  @apply flex flex-wrap gap-4 text-sm;
+}
+
+.contactInfo span {
+  @apply opacity-80;
+}
+
+.themeToggle {
+  @apply bg-white bg-opacity-20 border-0 rounded-full w-12 h-12 text-2xl cursor-pointer transition-all duration-300 hover:bg-opacity-30;
+}
+
+@media (max-width: 768px) {
+  .container {
+    @apply flex-col text-center gap-4;
+  }
+
+  .name {
+    @apply text-3xl;
+  }
+
+  .contactInfo {
+    @apply justify-center flex-col gap-2;
+  }
+}

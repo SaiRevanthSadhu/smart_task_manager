@@ -1,0 +1,97 @@
+.educationContainer {
+  @apply bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 transition-colors duration-300;
+}
+
+.sectionTitle {
+  @apply text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center;
+}
+
+.subsectionTitle {
+  @apply text-2xl font-semibold text-gray-900 dark:text-white mb-6;
+}
+
+.educationSection {
+  @apply mb-10;
+}
+
+.educationGrid {
+  @apply grid gap-6 md:grid-cols-2;
+}
+
+.educationCard {
+  @apply bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-700 dark:to-gray-600 rounded-lg p-6 shadow-md hover:shadow-lg transition-all duration-300;
+}
+
+.degreeInfo {
+  @apply space-y-2;
+}
+
+.degree {
+  @apply text-xl font-bold text-gray-900 dark:text-white;
+}
+
+.field {
+  @apply text-lg font-semibold text-blue-600 dark:text-blue-400;
+}
+
+.institution {
+  @apply text-gray-700 dark:text-gray-300 font-medium;
+}
+
+.location {
+  @apply text-gray-600 dark:text-gray-400 text-sm;
+}
+
+.durationGrade {
+  @apply flex justify-between items-center pt-2 border-t border-gray-200 dark:border-gray-500;
+}
+
+.duration {
+  @apply text-sm font-medium text-gray-600 dark:text-gray-300;
+}
+
+.grade {
+  @apply text-sm font-bold text-green-600 dark:text-green-400 bg-green-100 dark:bg-green-900 px-2 py-1 rounded;
+}
+
+.certificationsSection {
+  @apply mb-10;
+}
+
+.certificationsList {
+  @apply space-y-3;
+}
+
+.certificationItem {
+  @apply flex items-center space-x-3 bg-yellow-50 dark:bg-yellow-900 p-4 rounded-lg;
+}
+
+.certIcon {
+  @apply text-xl;
+}
+
+.achievementsSection {
+  @apply mb-6;
+}
+
+.achievementsList {
+  @apply space-y-4;
+}
+
+.achievementItem {
+  @apply flex items-start space-x-3 bg-green-50 dark:bg-green-900 p-4 rounded-lg;
+}
+
+.achievementIcon {
+  @apply text-xl mt-0.5;
+}
+
+@media (max-width: 768px) {
+  .educationGrid {
+    @apply grid-cols-1;
+  }
+
+  .durationGrade {
+    @apply flex-col items-start gap-2;
+  }
+}
