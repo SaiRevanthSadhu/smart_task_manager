@@ -7,10 +7,6 @@ A modern, responsive resume website built with React, TypeScript, and Tailwind C
 - **Vercel Deployment**: [Your Vercel URL here]
 - **GitHub Repository**: [Your GitHub URL here]
 
-## 📸 Screenshot
-
-![Resume Website Screenshot](./public/screenshot.png)
-
 ## ✨ Features Implemented
 
 ### Core Requirements (15/15 points)
@@ -52,40 +48,6 @@ A modern, responsive resume website built with React, TypeScript, and Tailwind C
 - **Version Control**: Git & GitHub
 - **Icons**: Unicode emojis for cross-platform compatibility
 - **Fonts**: Inter font family from Google Fonts
-
-## 📁 Project Structure
-
-\`\`\`
-src/
-├── components/
-│   ├── Header/
-│   │   ├── Header.tsx
-│   │   └── Header.module.css
-│   ├── About/
-│   │   ├── About.tsx
-│   │   └── About.module.css
-│   ├── Experience/
-│   │   ├── Experience.tsx
-│   │   └── Experience.module.css
-│   ├── Education/
-│   │   ├── Education.tsx
-│   │   └── Education.module.css
-│   ├── Skills/
-│   │   ├── Skills.tsx
-│   │   └── Skills.module.css
-│   ├── Projects/
-│   │   ├── Projects.tsx
-│   │   └── Projects.module.css
-│   └── Contact/
-│       ├── Contact.tsx
-│       └── Contact.module.css
-├── contexts/
-│   └── ThemeContext.tsx
-├── App.tsx
-├── App.module.css
-├── index.tsx
-└── index.css
-\`\`\`
 
 ## 🚧 Challenges Faced & Solutions
 
