@@ -15,6 +15,11 @@ export default function HomePage() {
 
   const toggleTheme = () => {
     setIsDarkMode(!isDarkMode)
+    if (!isDarkMode) {
+      document.documentElement.classList.add("dark")
+    } else {
+      document.documentElement.classList.remove("dark")
+    }
   }
 
   const personalInfo = {
@@ -26,20 +31,18 @@ export default function HomePage() {
   }
 
   return (
-    <div className={isDarkMode ? "dark" : ""}>
-      <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-300">
-        <Header personalInfo={personalInfo} isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
+    <div className="min-h-screen bg-background text-foreground transition-theme">
+      <Header personalInfo={personalInfo} isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
 
-        <Navigation activeSection={activeSection} setActiveSection={setActiveSection} />
+      <Navigation activeSection={activeSection} setActiveSection={setActiveSection} />
 
-        <main className="container mx-auto px-4 py-8">
-          {activeSection === "about" && <About />}
-          {activeSection === "experience" && <Experience />}
-          {activeSection === "education" && <Education />}
-          {activeSection === "skills" && <Skills />}
-          {activeSection === "contact" && <Contact personalInfo={personalInfo} />}
-        </main>
-      </div>
+      <main className="container mx-auto px-4 py-8">
+        {activeSection === "about" && <About />}
+        {activeSection === "experience" && <Experience />}
+        {activeSection === "education" && <Education />}
+        {activeSection === "skills" && <Skills />}
+        {activeSection === "contact" && <Contact personalInfo={personalInfo} />}
+      </main>
     </div>
   )
 }
